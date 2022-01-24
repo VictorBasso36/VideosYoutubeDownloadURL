@@ -1,0 +1,188 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    overflow-x: hidden;
+
+
+}
+
+.sectioninicio{
+    background-image: url("/img/fundo.jpg");
+    background-color: rgba(51, 43, 163, 0.933);
+    height: 390px;
+    overflow:hidden;
+    display: flex;
+    
+}
+
+.onda{
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    background: #7B68EE;
+    overflow: hidden;
+  }
+  
+  section .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 6.25rem;
+    background: url(/img/wave.png);
+    background-size: 1000px;
+  }
+  
+  section .wave.wave1 {
+    animation: animate 30s linear infinite;
+    z-index: 1;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+  }
+  
+  section .wave.wave2 {
+    animation: animate2 15s linear infinite;
+    z-index: 1;
+    opacity: 0.5;
+    animation-delay: 1s;
+    bottom: 0;
+  }
+  
+  @keyframes animate 
+  {
+      0%
+      {
+          background-position-x: 0;
+      }
+      100%
+      {
+          background-position-x: 100vh;
+      }
+  }
+  
+  @keyframes animate2 
+  {
+      0%
+      {
+          background-position-x: 100;
+      }
+      100%
+      {
+          background-position-x: -1000px;
+      }
+  }
+  /*fim da animação da wave*/
+  /*wave de baixo animação*/
+#svgonda {
+    transform: rotate(-180deg);
+    position: relative;
+    width: 100%;
+    height: 23vh;
+    background: 	#7B68EE;
+    overflow: hidden;  
+    
+  }
+  
+#ondatorta1{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 6.25rem;
+    background: url(/img/wave.png);
+    background-size: 1000px;
+    animation: animate 30s linear infinite;
+    z-index: 1;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;  
+  }
+
+#ondatorta2{ 
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 6.25rem;
+    background: url(/img/wave.png);
+    background-size: 1000px;
+    animation: animate2 15s linear infinite;
+    z-index: 1;
+    opacity: 0.5;
+    animation-delay: 1s;
+    bottom: 0;
+    
+    
+  }
+  /*fim wave de baixo*/
+  
+
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color:#4c0082;
+    height: 680px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    border-radius: 34px;} 
+
+
+
+.titulo{
+
+  padding: 100px; 
+  margin: .2em 0 0;
+  color: white;
+  font-size: 10vh; 
+  text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbbbbb,
+  0 4px 0 #b9b9b9, 0 5px 0 #aaaaaa, 0 6px 1px rgba(0, 0, 0, 0.1),
+  0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+  0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+      
+}
+
+.url{
+  padding: 15px;
+  display: block;
+  margin: 0 auto;
+  height:50px; 
+  width: 60%;
+  justify-content: center;
+  align-items: center; 
+  border-radius: 34px; 
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  margin-bottom: 50px;
+
+}
+
+.botaobaixar {
+  display: block; 
+  margin: 0 auto; 
+  height: 50px; 
+  width: 20%; 
+  border-radius: 34px; 
+  border-style: none; 
+  background-color:#fff; 
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  font-size: 30px;
+  color:#7B68EE;
+  text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);
+}
+.botaobaixar:hover{
+  margin: 0 auto; 
+  height: 50px; 
+  width: 20%; 
+  border-radius: 34px; 
+  border-style: none; 
+  background-color:#fff; 
+  cursor: hand;
+  text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);
+  color:black;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
